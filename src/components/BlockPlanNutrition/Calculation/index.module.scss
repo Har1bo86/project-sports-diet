@@ -1,0 +1,276 @@
+.calculation {
+    width: 100%;
+    background-color: rgb(33, 33, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .header {
+        width: 75%;
+        height: 70px;
+        background-color: #31EFA5;
+        margin-top: 15px;
+
+        & p {
+            color: white;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    }
+
+    .CalorieCalc {
+        width: 75%;
+        height: 350px;
+        background-color: rgb(33, 33, 45);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .GenderSelection {
+            margin-top: 20px;
+            width: 30%;
+            height: 200px;
+            background-color: rgb(33, 33, 45);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 30px;             
+            box-shadow:0 0 5px #31EFA5;
+
+            .MenButton, .WomanButton{
+                    background-color: #46b188; 
+                    color: white;
+                    border-radius: 10px;             
+                    font-size: 25px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    width: 70%;
+                    height: 30%;
+                    border: 0cm;
+            }
+
+            
+        }
+
+        .Data {
+            margin-top: 20px;
+            width: 30%;
+            height: 200px;
+            background-color: rgb(120, 120, 81);
+            display: flex;
+            border-radius: 30px;             
+            box-shadow:0 0 5px #31EFA5;
+            background-color: rgb(33, 33, 45);
+
+            .DataLeft, .DataRight {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                color: white;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+
+            .DataLeft {
+                width: 60%;
+            }
+
+            .DataRight {
+                width: 40%;
+                height: 100%;
+                align-items:self-start;
+
+                & input {
+                    border: 1px solid #31EFA5; 
+                    border-color: #31EFA5;
+                    border-radius: 10px;
+                    background-color: #46b188; 
+                    color: white;
+                    font-size: 15px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    width: 50%;
+                    height: 30px;
+                }
+            }
+        }
+
+        .Target {
+            margin-top: 20px;
+            width: 30%;
+            height: 200px;
+            background-color: rgb(33, 33, 45);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 30px;             
+            box-shadow:0 0 5px #31EFA5;
+
+            .support, .lose, .gain {
+                background-color: #46b188; 
+                color: white;
+                border-radius: 10px;             
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                width: 60%;
+                height: 20%;
+                border: 0cm;
+        }
+        }
+
+        .ButtonCalculate {
+            border: 1px solid #31EFA5; 
+            background-color: transparent; 
+            color: white;
+            border-radius: 20px;             
+            box-shadow:0 0 5px #31EFA5;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding:5px 50px;
+            height: 60px;
+
+          }
+    }
+
+    .result {
+        width: 75%;
+        height: 300px;
+        background-color: rgb(33, 33, 45);
+        margin-top: 20px;
+
+        .text {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'proxima',Arial,sans-serif;
+            text-transform: uppercase;
+            border-color: transparent;
+            border-style: solid;
+            margin-top: 10;
+          }
+    
+        .text1 {
+            color: #31EFA5;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'proxima',Arial,sans-serif;
+            text-transform: uppercase;
+            border-color: transparent;
+            border-style: solid;
+            margin-top: 10;
+          }
+
+          .tables {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .calories {
+                width: 15%;
+                height: 80%;
+                background-color: aqua;
+                border: 1px solid #31EFA5; 
+                background-color: transparent; 
+                color: white;
+                border-radius: 30px;             
+                box-shadow:0 0 5px #31EFA5;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+
+                .p {
+                    background-color: #31EFA5;
+                    width: 100%;
+                    height: 60%;
+                    border-radius: 30px 30px 0 0;             
+                    box-shadow:0 0 5px #31EFA5;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+
+            .proteins {
+                width: 15%;
+                height: 80%;
+                background-color: aqua;
+                border: 1px solid #31EFA5; 
+                background-color: transparent; 
+                color: white;
+                border-radius: 30px;             
+                box-shadow:0 0 5px #31EFA5;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+
+                .p {
+                    background-color: #31EFA5;
+                    width: 100%;
+                    height: 60%;
+                    border-radius: 30px 30px 0 0;             
+                    box-shadow:0 0 5px #31EFA5;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+
+            .fats {
+                width: 15%;
+                height: 80%;
+                background-color: aqua;
+                border: 1px solid #31EFA5; 
+                background-color: transparent; 
+                color: white;
+                border-radius: 30px;             
+                box-shadow:0 0 5px #31EFA5;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+
+                .p {
+                    background-color: #31EFA5;
+                    width: 100%;
+                    height: 60%;
+                    border-radius: 30px 30px 0 0;             
+                    box-shadow:0 0 5px #31EFA5;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+
+            .carbs {
+                width: 15%;
+                height: 80%;
+                background-color: aqua;
+                border: 1px solid #31EFA5; 
+                background-color: transparent; 
+                color: white;
+                border-radius: 30px;             
+                box-shadow:0 0 5px #31EFA5;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+
+                .p {
+                    background-color: #31EFA5;
+                    width: 100%;
+                    height: 60%;
+                    border-radius: 30px 30px 0 0;             
+                    box-shadow:0 0 5px #31EFA5;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+          }
+    }
+}
