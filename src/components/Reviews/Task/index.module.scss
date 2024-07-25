@@ -1,0 +1,86 @@
+.Task {
+    border-bottom: 1px solid #31EFA5;
+    background-color: rgb(102, 117, 118);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    width: 50%;
+    min-height: 50px;
+    margin: 30px 0 10px 0;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .pName {
+        color: #46b188;
+        font: bolder;
+        margin: 10px;
+        border-right: 1px solid #31EFA5;
+        width: 20%;
+        font-size: 16px;
+        text-align: center;
+        padding: 5px 20px;
+        overflow-wrap: break-word;
+        font-weight: bold;
+    }
+
+    .p {
+        color: white;
+        margin: 10px;
+        width: 60%;
+        height: 100%;
+        font-size: 18px;
+        align-content: center;
+        overflow-wrap: break-word;
+        font-style: italic;
+        border-right: 1px solid #31EFA5;
+
+    }
+
+    .btnDelete {
+        border: 1px solid #31EFA5;
+        border-radius: 30px;
+        padding: 1px 6px;
+        color: #468f73;
+        cursor: pointer;
+        background-color: rgb(168, 181, 181);
+    }
+
+    .btnDelete:hover {
+        background-color: #31EFA5;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Task {
+        width: 70%;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 700px) {
+    .Task {
+        width: 70%;
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 460px) {
+    .Task {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .Task {
+        width: 85%;
+
+        .btnDelete {
+            margin-right: 5px;
+        }
+
+        .p {
+            width: 50%;
+        }
+    }
+}

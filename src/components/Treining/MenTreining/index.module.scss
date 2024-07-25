@@ -1,0 +1,415 @@
+.MenTreining {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+
+    .MenTreiningFullBody,
+    .MenTreiningMuscleGroups {
+        border: 1px solid #31EFA5;
+        width: 32%;
+        margin: 0 10px 0 10px;
+        border-radius: 10px;
+        color: white;
+
+        .bannerMen {
+            height: 35px;
+            font-size: 25px;
+            margin-left: 15px;
+            margin-right: 15px;
+            color: #31EFA5;
+            border-bottom: 1px solid #31EFA5;
+        }
+
+        .BlockInfoMen {
+            .info {
+                color: white;
+                padding-bottom: 30px;
+
+                .infoUl {
+                    & p {
+                        color: #31EFA5;
+                        font-size: 30px;
+                    }
+
+                    .li {
+                        font-size: 15px;
+                        margin: 10px 20px 15px 0;
+
+                        & span {
+                            color: #31EFA5;
+                        }
+                    }
+                }
+            }
+        }
+
+        .FirstTreining,
+        .SecondTreining,
+        .ThirdTreining {
+            .info {
+                color: white;
+                padding-bottom: 15px;
+
+                .infoUl {
+                    & p {
+                        color: #31EFA5;
+                        font-size: 30px;
+                    }
+
+                    & h6 {
+                        color: #31EFA5;
+                        font-size: 20px;
+                        margin: 0;
+                    }
+
+                    .li {
+                        font-size: 18px;
+                        margin: 10px 20px 15px 0;
+
+                        & span {
+                            color: #31EFA5;
+                        }
+                    }
+                }
+
+                & h5 {
+                    color: #31EFA5;
+                    margin: 30px 0 0 25px;
+                }
+            }
+        }
+
+        .Download {
+            border: 1px solid #31EFA5;
+            background-color: #31EFA5;
+            color: white;
+            border-radius: 30px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding: 5px 35px;
+            margin: 15px;
+            cursor: pointer;
+
+        }
+    }
+
+    .MenTreiningFullBody {
+        .pictureMenFullBody {
+            background-image: url(../../../items/fullbody.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+        }
+    }
+
+    .MenTreiningMuscleGroups {
+        border: 1px solid #31EFA5;
+        width: 32%;
+        margin: 0 10px 0 10px;
+        border-radius: 10px;
+        color: white;
+
+        .pictureMenMuscleGroups {
+            background-image: url(../../../items/muscle.jpeg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    .MenTreining {
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+            .bannerMen {
+                font-size: 20px;
+                height: 35px;
+            }
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .MenTreining {
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+            .bannerMen {
+                font-size: 19px;
+                height: 35px;
+            }
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                height: 260px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .MenTreining {
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+            .bannerMen {
+                font-size: 15px;
+                height: 35px;
+            }
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                height: 220px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .MenTreining {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+            width: 50%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                width: 100%;
+                height: 300px;
+            }
+
+            .bannerMen {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .BlockInfoMen {
+                .info {
+
+                    .infoUl {
+                        & p {
+                            font-size: 20px;
+                        }
+
+                        .li {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .FirstTreining,
+            .SecondTreining,
+            .ThirdTreining {
+                .info {
+                    .infoUl {
+                        & p {
+                            font-size: 15px;
+                        }
+
+                        & h6 {
+                            font-size: 15px;
+                        }
+
+                        .li {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+            .Download {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MenTreining {
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                width: 100%;
+                height: 260px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .MenTreining {
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+
+            .bannerMen {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                width: 100%;
+                height: 220px;
+            }
+        }
+
+      
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .MenTreining {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+            width: 70%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .MenTreining {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+            width: 70%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                width: 100%;
+            }
+
+            .bannerMen {
+                font-size: 14px;
+            }
+
+            .BlockInfoMen {
+                .info {
+
+                    .infoUl {
+                        & p {
+                            font-size: 20px;
+                        }
+
+                        .li {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .FirstTreining,
+            .SecondTreining,
+            .ThirdTreining {
+                .info {
+                    .infoUl {
+                        & p {
+                            font-size: 15px;
+                        }
+
+                        & h6 {
+                            font-size: 15px;
+                        }
+
+                        .li {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+            .Download {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .MenTreining {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+            width: 70%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                width: 100%;
+                height: 200px;
+            }
+
+            .bannerMen {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .MenTreining {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .MenTreiningFullBody,
+        .MenTreiningMuscleGroups {
+            width: 80%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .pictureMenFullBody,
+            .pictureMenMuscleGroups {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}

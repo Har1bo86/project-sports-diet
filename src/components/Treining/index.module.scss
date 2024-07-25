@@ -1,0 +1,153 @@
+.Treining {
+    background-color: rgb(33, 33, 45);
+    color: white;
+    width: 100%;
+    padding-bottom: 100px;
+
+    .Header {
+        padding: 70px 0 20px 0;
+        text-align: center;
+
+        .text {
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            font-family: 'proxima', Arial, sans-serif;
+            text-transform: uppercase;
+            border-color: transparent;
+            border-style: solid;
+            margin: 0;
+        }
+
+        .text1 {
+            color: #31EFA5;
+            font-size: 45px;
+            font-weight: bold;
+            font-family: 'proxima', Arial, sans-serif;
+            text-transform: uppercase;
+            border-color: transparent;
+            border-style: solid;
+        }
+    }
+
+    .BlockTreining {
+        .Banner {
+            height: 100px;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+            .step {
+                width: 32%;
+                height: 45px;
+                margin: 10px;
+                background-color: #11784d;
+                border-radius: 10px;
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                cursor: pointer;
+                align-content: center;
+
+                &-active {
+                    background-color: #18b170;
+                }
+            }
+        }
+
+        .content {
+            width: 100%;
+
+            .element {
+                display: none;
+
+                &-active {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Treining {
+        .Header {
+
+            .text,
+            .text1 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Treining {
+        .BlockTreining {
+            .Banner {
+                .step {
+                    font-size: 25px;
+                    align-content: center;
+                }
+            }
+        }
+        }
+}
+
+@media screen and (max-width: 850px) {
+    .Treining {
+        .Header {
+            .text, .text1 {
+                font-size: 30px;
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Treining {
+        .BlockTreining {
+            .Banner {
+                .step {
+                    font-size: 20px;
+                    align-content: center;
+                }
+            }
+        }
+        }
+}
+
+@media screen and (max-width: 480px) {
+    .Treining {
+        .Header {
+            .text, .text1 {
+                font-size: 25px;
+            } 
+        }
+        .BlockTreining {
+            .Banner {
+                .step {
+                    font-size: 17px;
+                    align-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Treining {
+    .BlockTreining {
+        .Banner {
+            .step {
+                font-size: 13px;
+                align-content: center;
+            }
+        }
+    }
+    }
+}

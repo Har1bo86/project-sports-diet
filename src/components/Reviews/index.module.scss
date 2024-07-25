@@ -1,0 +1,65 @@
+.BlockReviews {
+    background-color: rgb(33, 33, 45);
+    width: 100%;
+    padding: 20px 0 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .headerReviews {
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        align-content: end;
+
+        
+
+        & h2 {
+            color: white;
+            font-size: 35px;
+            margin: 0;
+
+            & span {
+                color: #31EFA5;
+            }
+
+            .stars {
+            color: yellow;
+            }
+        }
+    }
+}
+  
+  
+  /////////////////////////////////////////////////////////////////////////////////
+  @media screen and (max-width: 700px) {
+    .BlockReviews {
+    .headerReviews {
+        & h2 {
+            font-size: 30px;
+        }
+    }
+}
+  }
+  
+  ////////////////////////////////////////////////////////////////////////////
+  @media screen and (max-width: 410px) {
+    .BlockReviews {
+        .headerReviews {
+            & h2 {
+                font-size: 25px;
+            }
+        }
+    }
+  }
+  
+  // ///////////////////////////////////////////////////////////////////////////////////////////////  
+  @media screen and (max-width: 350px) {
+    .BlockReviews {
+        .headerReviews {
+            & h2 {
+                font-size: 20px;
+            }
+        }
+    }
+  }

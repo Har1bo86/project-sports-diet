@@ -1,0 +1,256 @@
+.footer {
+    height: 200px;
+    background-color: #191622;
+    display: flex;
+    flex-direction: row;
+
+    .leftFooter {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            color: white;
+            font-size: 25px;
+            margin-left: 50px;
+
+            & span {
+                color: #31EFA5;
+            }
+        }
+
+        .textLeft {
+            color: white;
+            font-size: 17px;
+            margin-left: 50px;
+        }
+    }
+
+    .buttonFooter {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            border-bottom: 1px solid rgb(91, 125, 126);
+            color: rgb(91, 125, 126);
+            font-size: 20px;
+        }
+
+        .btn:focus {
+            background-color: rgb(91, 125, 126, 0.3);
+            border-radius: 10px;
+        }
+
+
+    }
+
+    .rightFooter {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btnRight {
+            color: white;
+            font-size: 25px;
+            border: 1px solid #31EFA5;
+            border-radius: 30px;
+            background-color: transparent;
+            box-shadow: 0 0 5px #31EFA5;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px 30px;
+            cursor: pointer;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+
+        .btnRight:hover {
+            background-color: #31EFA5;
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .footer {
+        .leftFooter {
+            .title {
+                font-size: 20px;
+            }
+            .textLeft {
+                font-size: 15px;
+            }
+        }
+        .buttonFooter {
+            .btn {
+                font-size: 18px;
+            }
+        }
+        .rightFooter {
+            .btnRight {
+                font-size: 20px;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 788px) {
+    .footer {
+        .leftFooter {
+            .title {
+                font-size: 18px;
+            }
+            .textLeft {
+                font-size: 14px;
+            }
+        }
+        .buttonFooter {
+            .btn {
+                font-size: 16px;
+            }
+        }
+        .rightFooter {
+            .btnRight {
+                font-size: 18px;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .footer {
+        .leftFooter {
+            .title {
+                font-size: 16px;
+            }
+            .textLeft {
+                font-size: 13px;
+            }
+        }
+        .buttonFooter {
+            .btn {
+                font-size: 14px;
+            }
+        }
+        .rightFooter {
+            .btnRight {
+                font-size: 16px;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        .leftFooter {
+            .title {
+                font-size: 16px;
+            }
+            .textLeft {
+                font-size: 13px;
+            }
+        }
+        .buttonFooter {
+            margin: 0 5px;
+            .btn {
+                font-size: 13px;
+            }
+        }
+        .rightFooter {
+            .btnRight {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+
+        .leftFooter {
+            width: 50%;
+            margin: 0;
+            .title {
+                font-size: 16px;
+                margin: 0;
+            }
+            .textLeft {
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+        .buttonFooter {
+            width: 50%;
+            margin: 0;
+            .btn {
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+        .rightFooter {
+            width: 50%;
+            margin: 0;
+            .btnRight {
+                font-size: 16px;
+                padding: 10px 20px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+
+        .leftFooter {
+            width: 100%;
+            margin: 0;
+            .title {
+                font-size: 16px;
+                margin: 0;
+            }
+            .textLeft {
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+        .buttonFooter {
+            width: 100%;
+            margin: 0;
+            .btn {
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+        .rightFooter {
+            width: 100%;
+            margin: 0;
+            .btnRight {
+                font-size: 16px;
+                padding: 10px 15px;
+                margin: 0;
+            }
+        }
+    }
+}

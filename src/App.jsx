@@ -1,16 +1,23 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
-import Ticker from './components/Ticker/Ticker';
-import BlockPlanNutrition from './components/BlockPlanNutrition/BlockPlanNutrition';
+import Home from './pages/Home/Home';
+import ReadyMadeRacions from './pages/ReadyMadeRacions/ReadyMadeRacions'
+
 
 function App() {
 
   return (
-    <div className='App'>
-        <Header/>
-        <Ticker/>
-        <BlockPlanNutrition/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/ReadyMadeRacions" element={<ReadyMadeRacions />}/>
+      <Route path="*" element={<Home />}/>
+      </Routes>
+      {/* <Routes>
+      <Route path="/ReadyMadeRacions" element={<ReadyMadeRacions />}/>
+      </Routes> */}
+        
+    </BrowserRouter>
   )
 }
 

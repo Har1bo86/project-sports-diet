@@ -16,12 +16,12 @@
             font-size: 25px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
+            margin-left: 15px;
         }
     }
 
     .CalorieCalc {
         width: 75%;
-        height: 350px;
         background-color: rgb(33, 33, 45);
         display: flex;
         justify-content: space-around;
@@ -38,9 +38,8 @@
             justify-content: space-evenly;
             border-radius: 30px;             
             box-shadow:0 0 5px #31EFA5;
-
-            .MenButton, .WomanButton{
-                    background-color: #46b188; 
+            .step {
+                background-color: #46b188; 
                     color: white;
                     border-radius: 10px;             
                     font-size: 25px;
@@ -49,9 +48,12 @@
                     width: 70%;
                     height: 30%;
                     border: 0cm;
-            }
-
-            
+                    cursor: pointer;
+    
+                &-active {
+                    background-color:#31EFA5;
+                }
+            }           
         }
 
         .Data {
@@ -77,6 +79,7 @@
 
             .DataLeft {
                 width: 60%;
+                text-align: center;
             }
 
             .DataRight {
@@ -111,6 +114,22 @@
             border-radius: 30px;             
             box-shadow:0 0 5px #31EFA5;
 
+            .stepTarget {
+                background-color: #46b188; 
+                color: white;
+                border-radius: 10px;             
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                width: 60%;
+                height: 20%;
+                border: 0cm;
+                    cursor: pointer;
+    
+                &-active {
+                    background-color:#31EFA5;
+                }
+            }
             .support, .lose, .gain {
                 background-color: #46b188; 
                 color: white;
@@ -121,6 +140,10 @@
                 width: 60%;
                 height: 20%;
                 border: 0cm;
+        }
+        .support:focus, .lose:focus, .gain:focus {
+            cursor: pointer;
+            background-color: #31EFA5;
         }
         }
 
@@ -135,13 +158,20 @@
             font-weight: bold;
             padding:5px 50px;
             height: 60px;
+            margin: 30px 0 30px 0;
 
+          }
+          .ButtonCalculate:focus {
+            cursor: pointer;
+            background-color: #31EFA5;
+          }
+          .ButtonCalculate:disabled {
+            background-color: rgb(173, 171, 171);
           }
     }
 
     .result {
         width: 75%;
-        height: 300px;
         background-color: rgb(33, 33, 45);
         margin-top: 20px;
 
@@ -154,6 +184,7 @@
             border-color: transparent;
             border-style: solid;
             margin-top: 10;
+            text-align: center;
           }
     
         .text1 {
@@ -173,6 +204,7 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            text-align: center;
 
             .calories {
                 width: 15%;
@@ -186,8 +218,6 @@
                 font-size: 25px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: bold;
-                display: flex;
-                justify-content: center;
 
                 .p {
                     background-color: #31EFA5;
@@ -198,6 +228,12 @@
                     align-items: center;
                     display: flex;
                 }
+                .caloriesText {
+                    margin-top: 10%;
+                    height: 20%;
+                    font-size: 30px;
+                }
+                
             }
 
             .proteins {
@@ -221,6 +257,11 @@
                     box-shadow:0 0 5px #31EFA5;
                     align-items: center;
                     display: flex;
+                }
+                .caloriesText {
+                    margin-top: 10%;
+                    height: 20%;
+                    font-size: 30px;
                 }
             }
 
@@ -246,6 +287,11 @@
                     align-items: center;
                     display: flex;
                 }
+                .caloriesText {
+                    margin-top: 10%;
+                    height: 20%;
+                    font-size: 30px;
+                }
             }
 
             .carbs {
@@ -270,7 +316,266 @@
                     align-items: center;
                     display: flex;
                 }
+                .caloriesText {
+                    margin-top: 10%;
+                    height: 20%;
+                    font-size: 30px;
+                }
             }
           }
     }
+
+    .ButtonPages {
+        border: 1px solid #31EFA5; 
+        background-color: transparent; 
+        border-radius: 20px;             
+        box-shadow:0 0 5px #31EFA5;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding:5px 50px;
+        height: 45px;
+        margin: 30px 0 30px 0;
+
+        .link {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .ButtonPages:hover {
+        cursor: pointer;
+        background-color: #31EFA5;
+    }
+ 
 }
+
+@media screen and (max-width: 1024px) {
+    .calculation {
+        .header {
+            height: 60px;
+            & p {
+                font-size: 20px;
+            }
+          }
+        .CalorieCalc {
+            .GenderSelection, .Data, .Target {
+                height: 180px;
+            }
+            .GenderSelection {
+                .step {
+                    font-size: 20px;
+                }
+            }
+            .Data {
+                .DataLeft, .DataRight {
+                    font-size: 15px;
+                }
+                .DataRight {
+                    & input {
+                        height: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .Target {
+                .stepTarget {
+                    font-size: 13px;
+                }
+            }
+        }
+        .result {
+            .text, .text1 {
+                font-size: 30px;
+            }
+
+            .tables {
+                .calories, .proteins, .fats, .carbs {
+                    .p {
+                        font-size: 15px;
+                    }
+                    .caloriesText {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+    }
+  }
+  //////////////////////////////////////////
+  @media screen and (max-width: 768px) {
+    .calculation {
+        .header {
+            & p {
+                font-size: 18px;
+            }
+          }
+        .CalorieCalc {
+            .GenderSelection, .Data, .Target {
+                height: 160px;
+            }
+
+            .GenderSelection {
+                .step {
+                    font-size: 17px;
+                }
+            }
+
+            .Data {
+                .DataLeft, .DataRight {
+                    font-size: 15px;
+                }
+                .DataRight {
+                    & input {
+                        font-size: 12px;
+                        height: 18px;
+                    }
+                }
+            }
+            .Target {
+                .stepTarget {
+                    font-size: 11px;
+                }
+            }
+            .ButtonCalculate {
+                font-size: 25px;
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .calculation {
+        .CalorieCalc {
+            .Target {
+                .stepTarget {
+                    font-size: 9px;
+                }
+            }
+        }
+        .result {
+            .tables {
+                .calories, .proteins, .fats, .carbs {
+                    height: 120px;
+                    .p {
+                        font-size: 12px;
+                    }
+                    .caloriesText {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .ButtonPages {
+
+            font-size: 15px;
+        }
+         
+    }
+    
+  }
+  ////////////////////////////////////
+  @media screen and (max-width: 550px) {
+    .calculation {
+        .header {
+            height: 50px;
+            & p {
+                font-size: 15px;
+            }
+          }
+          .CalorieCalc {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            .GenderSelection {
+                flex-direction: row;
+                width: 70%;
+                height: 70px;
+
+                .step {
+                    width: 40%;
+                    height: 50%;
+                    font-size: 15px;
+                }
+            }
+
+            .Data {
+                width: 70%;
+                
+            }
+
+            .Target {
+                width: 70%;
+            }
+          }
+
+          .result {
+            .tables {
+                
+                .calories, .proteins, .fats, .carbs {
+                    height: 100px;
+                    .p {
+                        font-size: 10px;
+                    }
+                    .caloriesText {
+                        font-size: 12px;
+                    }
+                }
+            }
+          }
+
+          .ButtonPages {
+            font-size: 12px;
+        }
+    }
+
+
+  }
+  ////////////////////////////////////
+  @media screen and (max-width: 380px) {
+    .calculation {
+        .header {
+            height: 40px;
+            & p {
+                font-size: 12px;
+            }
+          }
+
+          .result {
+            .text, .text1 {
+                font-size: 12px;
+            }
+            .tables {
+                height: 300px;
+                flex-wrap: wrap;
+                .calories, .proteins, .fats, .carbs {
+                    width:30%;
+                    margin: 10px;
+                    .p {
+                        font-size: 10px;
+                    }
+                    .caloriesText {
+                        font-size: 12px;
+                    }
+                }
+            }
+          }
+
+          .ButtonPages {
+            font-size: 9px;
+          }
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .calculation {
+        .CalorieCalc {
+            .GenderSelection {
+                .step {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    
+  }

@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -35,4 +35,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 1200px) {
+  /* .app {
+    width: 1200px;
+  } */
+}
+
+@media (max-width: 1000px) {
+  /* .app {
+    width: 1000px;
+  } */
+}
+
+@media (max-width: 768px) {
+  /* .app {
+    width: 768px;
+  } */
+}
+
+
+@media (max-width: 480px) {
+  /* .app {
+    width: 480px;
+  } */
 }

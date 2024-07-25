@@ -1,23 +1,11 @@
 import React from "react";
 import styles from './index.module.scss';
-import icon from '../../items/icon.jpg';
-import logo from '../../items/photo.png';
-import { useSelector } from "react-redux";
-import { setGender } from "../../redux/slices/counterSlice";
+import icon from '../../../items/icon.jpg';
+import { Link } from "react-router-dom";
 
-function Header() {
 
-  const value = useSelector((state) => state.counter.value) 
-  const gender = useSelector((state) => state.counter.gender)
+function HeaderReadyMadeRacions() {
 
-  const moveTo = (id) => {
-    const elem = document.getElementById(id);
-    elem.scrollIntoView({ behavior: "smooth", block: "center" })
-  }
-  // const moveToTreining = (id) => {
-  //   const elem = document.getElementById(id);
-  //   elem.scrollIntoView({ behavior: "smooth", block: "center" })
-  // }
 
     return (
       <div id={"Header"} className={styles.Header}>
@@ -34,8 +22,9 @@ function Header() {
               </div>
 
               <div className={styles.BlockPlan}>
-                <button onClick={() => moveTo("BlockPlanNutrition")} className={styles.PlanNutrition}>Рацион питания</button>
-               <button onClick={() => moveTo("Treining")} className={styles.PlanTreining}>План питания</button>
+              <button className={styles.ButtonCalculate}>
+                    <Link className={styles.link} to='/'>Вернуться на главную страницу</Link>
+                </button>
               </div>
 
           </div>
@@ -48,5 +37,5 @@ function Header() {
     );
   }
   
-  export default Header;
+  export default HeaderReadyMadeRacions;
   

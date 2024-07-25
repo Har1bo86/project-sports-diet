@@ -1,6 +1,6 @@
 .ticker {
     background-color: #18b170;
-    max-width: 100%;
+    width: 100%;
     color: white;
     overflow: hidden;
 
@@ -8,11 +8,12 @@
         display: flex;
         width: 200%;
         animation: ticker 30s linear infinite;
-      }
 
-    & h1 {
-        white-space: nowrap;
-        width: 100%;
+        & h1 {
+          white-space: nowrap;
+          width: 100%;
+          margin-right: 16px;
+        }
       }
   }
 
@@ -25,3 +26,43 @@
       transform: translateX(-50%);
     }
   }
+
+  ////////////////////////////////////////////////////////////
+  @media screen and (max-width: 1200px) {
+    .ticker {
+      & div {
+        & h1 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .ticker {
+      & div {
+        & h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .ticker {
+      & div {
+        & h1 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .ticker {
+      & div {
+        & h1 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  

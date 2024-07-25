@@ -1,0 +1,632 @@
+.racion {
+    background-color: rgb(33, 33, 45);
+    padding-bottom: 100px;
+
+    .h1 {
+        height: 150px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+
+        & h1 {
+            font-size: 60px;
+            color: white;
+            margin: 0;
+
+            & span {
+                color: #31EFA5;
+            }
+        }
+
+    }
+
+    .main {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .blockInfo {
+            border: 1px solid #31EFA5;
+            height: 200px;
+            border-radius: 20px;
+            margin: 30px;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .step {
+                width: 15%;
+                font-size: 80px;
+                text-align: center;
+                color: #31EFA5;
+            }
+
+            .title {
+                width: 25%;
+                font-size: 18px;
+                color: white;
+                text-align: center;
+            }
+
+            .details {
+                width: 25%;
+                font-size: 18px;
+                color: #31EFA5;
+                text-align: center;
+
+                .detailsInfo {
+                    font-family: Arial, Helvetica, sans-serif;
+
+                    .modalTitle {
+                        font-size: 25px;
+                    }
+
+                    .modalMain {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 10px;
+
+                        .blockImages1,
+                        .blockImages2,
+                        .blockImages3,
+                        .blockImages4 {
+                            width: 40%;
+                            height: auto;
+                            border-radius: 20px;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                        }
+
+                        .blockImages1 {
+                            background-image: url(../../../items/modalracion1.jpg);
+                        }
+
+                        .blockImages2 {
+                            background-image: url(../../../items/modalracion2.jpg);
+                        }
+
+                        .blockImages3 {
+                            background-image: url(../../../items/modalracion3.jpg);
+                        }
+
+                        .blockImages4 {
+                            background-image: url(../../../items/modalracion4.jpg);
+                        }
+
+                        .modalText {
+                            width: 60%;
+                            color: white;
+                            text-align: left;
+                            padding: 10px;
+
+                            & span {
+                                color: #31EFA5;
+                            }
+
+                            & h4 {
+                                font-size: 15px;
+                            }
+
+                            & h6 {
+                                font-size: 14px;
+                            }
+
+                            & p {
+                                color: #31EFA5;
+                            }
+
+                            & ul li {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    & table {
+                        color: white;
+
+                        & tr {
+                            & td {
+                                border: 1px solid #31EFA5;
+                                font-size: 13px;
+                                padding: 5px;
+                                border-radius: 5px;
+                            }
+                        }
+
+                        .tr1 {
+                            background-color: #31EFA5;
+                            color: black;
+                            border-radius: 5px;
+                        }
+
+                        .td1 {
+                            font-size: 16px;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+
+            .photo1,
+            .photo2,
+            .photo3,
+            .photo4,
+            .photo5 {
+                width: 35%;
+                height: 100%;
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .photo1 {
+                background-image: url(../../../items/racion1.jpg);
+            }
+
+            .photo2 {
+                background-image: url(../../../items/racion2.jpg);
+
+            }
+
+            .photo3 {
+
+                background-image: url(../../../items/racion3.jpeg);
+
+
+            }
+
+            .photo4 {
+                background-image: url(../../../items/racion4.jpg);
+
+            }
+
+            .photo5 {
+                background-image: url(../../../items/racion5.jpg);
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .racion {
+        .main {
+            .blockInfo {
+                width: 80%;
+
+                .step {
+                    width: 15%;
+                    font-size: 70px;
+                }
+
+                .title {
+                    width: 25%;
+                    font-size: 16px;
+                }
+
+                .details {
+                    width: 30%;
+
+                    .detailsInfo {
+                        .modalTitle {
+                            font-size: 20px;
+                        }
+
+                        .modalMain {
+                            width: 100%;
+                            margin-top: 10px;
+
+                            .blockImages1,
+                            .blockImages2,
+                            .blockImages3,
+                            .blockImages4 {
+                                width: 40%;
+                            }
+
+
+                            .modalText {
+                                width: 60%;
+
+                                & h4 {
+                                    font-size: 13px;
+                                }
+
+                                & h6 {
+                                    font-size: 12px;
+                                }
+
+                                & ul li {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        & table {
+                            & tr {
+                                & td {
+                                    font-size: 11px;
+                                }
+                            }
+
+                            .td1 {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .racion {
+        .h1 {
+            & h1 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .racion {
+        .main {
+            .blockInfo {
+                width: 85%;
+
+                .step {
+                    width: 15%;
+                    font-size: 65px;
+                }
+
+                .title {
+                    width: 25%;
+                    font-size: 15px;
+                }
+
+                .details {
+                    width: 31%;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .racion {
+        .h1 {
+            & h1 {
+                font-size: 40px;
+            }
+        }
+
+        .main {
+            .blockInfo {
+                width: 85%;
+
+                .step {
+                    width: 15%;
+                    font-size: 65px;
+                }
+
+                .title {
+                    width: 25%;
+                    font-size: 14px;
+                }
+
+                .details {
+                    width: 35%;
+
+                    .detailsInfo {
+                        .modalTitle {
+                            font-size: 20px;
+                        }
+
+                        .modalMain {
+                            width: 100%;
+                            margin-top: 10px;
+
+                            .blockImages1,
+                            .blockImages2,
+                            .blockImages3,
+                            .blockImages4 {
+                                width: 40%;
+                            }
+
+
+                            .modalText {
+                                width: 60%;
+
+                                & h4 {
+                                    font-size: 12px;
+                                }
+
+                                & h6 {
+                                    font-size: 11px;
+                                }
+
+                                & ul li {
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .racion {
+        .main {
+            .blockInfo {
+                width: 85%;
+                height: 150px;
+
+                .step {
+                    width: 20%;
+                    font-size: 65px;
+                }
+
+                .title {
+                    width: 30%;
+                    font-size: 14px;
+                }
+
+                .details {
+                    width: 50%;
+
+                    .detailsInfo {
+                        .modalTitle {
+                            font-size: 20px;
+                        }
+
+                        .modalMain {
+                            width: 100%;
+                            margin-top: 10px;
+
+                            .blockImages1,
+                            .blockImages2,
+                            .blockImages3,
+                            .blockImages4 {
+                                width: 40%;
+                            }
+
+
+                            .modalText {
+                                width: 60%;
+
+                                & h4 {
+                                    font-size: 12px;
+                                }
+
+                                & h6 {
+                                    font-size: 10px;
+                                }
+
+                                & ul li {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        & table {
+                            & tr {
+                                & td {
+                                    font-size: 11px;
+                                    padding: 2px;
+                                }
+                            }
+
+                            .td1 {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+
+                .photo1,
+                .photo2,
+                .photo3,
+                .photo4,
+                .photo5 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .racion {
+        .h1 {
+            & h1 {
+                text-align: center;
+            }
+        }
+
+        .main {
+            .blockInfo {
+                .details {
+                    .detailsInfo {
+                        .modalTitle {
+                            font-size: 20px;
+                        }
+
+                        .modalMain {
+                            width: 100%;
+                            margin-top: 10px;
+
+                            .blockImages1,
+                            .blockImages2,
+                            .blockImages3,
+                            .blockImages4 {
+                                width: 40%;
+                            }
+
+
+                            .modalText {
+                                width: 60%;
+
+                                & h4 {
+                                    font-size: 10px;
+                                }
+
+                                & h6 {
+                                    font-size: 10px;
+                                }
+
+                                & ul li {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+
+                        & table {
+                            & tr {
+                                & td {
+                                    font-size: 8px;
+                                    padding: 1px;
+                                }
+                            }
+                        }
+
+                        .td1 {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .racion {
+        .h1 {
+            & h1 {
+                font-size: 30px;
+            }
+        }
+
+        .main {
+            .blockInfo {
+                width: 85%;
+                flex-direction: column;
+                padding-bottom: 20px;
+
+                .step {
+                    width: 100%;
+                    font-size: 60px;
+                }
+
+                .title {
+                    width: 100%;
+                    font-size: 14px;
+                }
+
+                .details {
+                    width: 100%;
+
+                    .detailsInfo {
+                        .modalTitle {
+                            font-size: 20px;
+                        }
+                        .modalMain {
+                            .blockImages1,
+                            .blockImages2,
+                            .blockImages3,
+                            .blockImages4 {
+                                display: none;
+                            }
+                            .modalText {
+                                width: 100%;
+
+                                & h4 {
+                                    font-size: 10px;
+                                }
+
+                                & h6 {
+                                    font-size: 10px;
+                                }
+
+                                & ul li {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+
+
+                        & table {
+                            & tr {
+                                & td {
+                                    font-size: 7px;
+                                    padding: 1px;
+                                }
+                            }
+                        }
+
+                        .td1 {
+                            font-size: 11px;
+                        }
+                    }
+                }
+
+                .photo1,
+                .photo2,
+                .photo3,
+                .photo4,
+                .photo5 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .racion {
+
+        .main {
+            .blockInfo {
+                .details {
+                    .detailsInfo {
+                        & table {
+                            & tr {
+                                & td {
+                                    font-size: 7px;
+                                }
+                            }
+
+                            .td1 {
+                                font-size: 8px;
+                            }
+                        }
+
+
+                    }
+                }
+
+                .photo1,
+                .photo2,
+                .photo3,
+                .photo4,
+                .photo5 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
