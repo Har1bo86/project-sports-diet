@@ -13,9 +13,6 @@ function App() {
       <Route path="/ReadyMadeRacions" element={<ReadyMadeRacions />}/>
       <Route path="*" element={<Home />}/>
       </Routes>
-      {/* <Routes>
-      <Route path="/ReadyMadeRacions" element={<ReadyMadeRacions />}/>
-      </Routes> */}
         
     </BrowserRouter>
   )
