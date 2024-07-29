@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/project-sports-diet/static/css/main.03da12d2.css",
+    "main.js": "/project-sports-diet/static/js/main.1c5cb137.js",
+    "static/media/WomanMuscle.jpeg": "/project-sports-diet/static/media/WomanMuscle.7052cf4b4d00b07bde6f.jpeg",
+    "static/media/racion5.jpg": "/project-sports-diet/static/media/racion5.4f8afd9e5d91f2957597.jpg",
+    "static/media/muscle.jpeg": "/project-sports-diet/static/media/muscle.95b25f64631e4dcecd3a.jpeg",
+    "static/media/fullbody.jpg": "/project-sports-diet/static/media/fullbody.6d1d86129f6feaa72621.jpg",
+    "static/media/WomanFullBody.jpg": "/project-sports-diet/static/media/WomanFullBody.a69cb68ba481e68d97cc.jpg",
+    "static/media/modalracion3.jpg": "/project-sports-diet/static/media/modalracion3.c354a19784796fc498ce.jpg",
+    "static/media/modalracion2.jpg": "/project-sports-diet/static/media/modalracion2.c5d349b9ba3c7eec96a7.jpg",
+    "static/media/modalracion4.jpg": "/project-sports-diet/static/media/modalracion4.5f8bacdf53838f6e6bef.jpg",
+    "static/media/modalracion1.jpg": "/project-sports-diet/static/media/modalracion1.8b024d0085789cb5625b.jpg",
+    "static/media/photo.png": "/project-sports-diet/static/media/photo.3b3af9b4bf32afa1b1d3.png",
+    "static/media/racion2.jpg": "/project-sports-diet/static/media/racion2.4325853112ccb6c05b14.jpg",
+    "static/media/racion3.jpeg": "/project-sports-diet/static/media/racion3.507254295f0f3deb5868.jpeg",
+    "static/media/racion4.jpg": "/project-sports-diet/static/media/racion4.de2f1c013b88a6217add.jpg",
+    "static/media/racion1.jpg": "/project-sports-diet/static/media/racion1.0ab76d930bffbbb204b2.jpg",
+    "index.html": "/project-sports-diet/index.html",
+    "main.03da12d2.css.map": "/project-sports-diet/static/css/main.03da12d2.css.map",
+    "main.1c5cb137.js.map": "/project-sports-diet/static/js/main.1c5cb137.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03da12d2.css",
+    "static/js/main.1c5cb137.js"
+  ]
+}
