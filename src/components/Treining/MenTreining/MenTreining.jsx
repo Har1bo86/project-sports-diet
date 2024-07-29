@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from './index.module.scss';
 import ModalBlock from "../../UI/ModalBlock/ModalBlock";
-
 function MenTreining() {
 
     return ( 
@@ -72,7 +71,7 @@ function MenTreining() {
                         </ModalBlock>
                     </div>
                     
-                    <a href="../../../items/icon.jpg" download> <button className={styles.Download}>Скачать план тренировок</button></a>
+                    <a href={`${process.env.PUBLIC_URL}/treining.txt`} download> <button className={styles.Download}>Скачать план тренировок</button></a>
                 </div>
 
                 <div className={styles.MenTreiningMuscleGroups}>
@@ -146,7 +145,7 @@ function MenTreining() {
                         </ModalBlock>
                     </div>
 
-                    <a href="../../../items/icon.jpg" download> <button className={styles.Download}>Скачать план тренировок</button></a>
+                    <a href={`${process.env.PUBLIC_URL}/treining.txt`} download> <button className={styles.Download}>Скачать план тренировок</button></a>
                 </div>
                 </div>
             
