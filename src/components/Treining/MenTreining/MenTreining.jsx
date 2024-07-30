@@ -71,7 +71,7 @@ function MenTreining() {
                         </ModalBlock>
                     </div>
                     
-                    <a href={`${process.env.PUBLIC_URL}/treining.txt`} download> <button className={styles.Download}>Скачать план тренировок</button></a>
+                    <a href={`${process.env.PUBLIC_URL}/MenTreining1.txt`} download> <button className={styles.Download}>Скачать план тренировок</button></a>
                 </div>
 
                 <div className={styles.MenTreiningMuscleGroups}>
@@ -145,7 +145,7 @@ function MenTreining() {
                         </ModalBlock>
                     </div>
 
-                    <a href={`${process.env.PUBLIC_URL}/treining.txt`} download> <button className={styles.Download}>Скачать план тренировок</button></a>
+                    <a href={`${process.env.PUBLIC_URL}/MenTreining2.txt`} download> <button className={styles.Download}>Скачать план тренировок</button></a>
                 </div>
                 </div>
             
